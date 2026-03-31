@@ -161,8 +161,9 @@ export default function App() {
     setCart([]);
     toast.success("Checkout successful! 🎉", { autoClose: 3000 });
   };
-    // return 
- 
+  return (
+    <div className="min-h-screen bg-gray-50">
+      <ToastContainer position="top-right" />
 
       {/* NAVBAR */}
       <nav className="bg-white border-b border-gray-100 sticky top-0 z-50">
