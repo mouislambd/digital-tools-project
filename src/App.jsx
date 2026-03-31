@@ -390,4 +390,30 @@ export default function App() {
         </div>
       </section>
 
-      
+      {/* FOOTER */}
+      <footer className="bg-gray-900 text-gray-400 px-6 py-10">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-8">
+          <div>
+            <div className="text-white font-black text-lg mb-2">DigiTools</div>
+            <p className="text-sm">Premium digital tools for modern creators.</p>
+          </div>
+          {[
+            { title: "Product", links: ["Features", "Pricing", "Templates", "API"] },
+            { title: "Company", links: ["About", "Blog", "Careers", "Press"] },
+            { title: "Support", links: ["Help Center", "Contact", "Privacy", "Terms"] },
+          ].map((col) => (
+            <div key={col.title}>
+              <h4 className="text-white font-bold mb-3 text-sm">{col.title}</h4>
+              <ul className="space-y-2 text-sm">
+                {col.links.map((l) => <li key={l}><a href="#" className="hover:text-white transition">{l}</a></li>)}
+              </ul>
+            </div>
+          ))}
+        </div>
+        <div className="max-w-6xl mx-auto border-t border-gray-700 mt-8 pt-6 text-sm text-center">
+          © 2026 DigiTools. All rights reserved.
+        </div>
+      </footer>
+    </div>
+  );
+}
