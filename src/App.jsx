@@ -188,10 +188,12 @@ export default function App() {
                   {cart.length}
                 </span>
               )}
+            </button>
+            <button className="text-sm text-gray-500 hover:text-gray-800 mr-2">Login</button>
+            <button className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded-full transition">
+              Get Started
+            </button>
 
-              {/* <button> */}
-           
-           
           </div>
         </div>
       </nav>
